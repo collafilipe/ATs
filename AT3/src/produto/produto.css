@@ -1,0 +1,167 @@
+/* Estilos para os itens listados */
+.item-listado {
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para o conteúdo dentro dos itens listados */
+.conteudo {
+    display: flex;
+    gap: 2em;
+    overflow: hidden;
+}
+
+/* Estilos para as ações dentro dos itens listados */
+.acoes {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+/* Estilos para os ícones de ações */
+.icone {
+    height: 1.2em;
+    width: 1.2em;
+    cursor: pointer;
+}
+
+/* Estilos para o ícone de edição */
+.edit {
+    margin: auto auto; /* Centraliza verticalmente */
+    color: blue;
+    cursor: pointer;
+}
+
+/* Estilos para os rótulos dentro do formulário */
+.form-cliente label {
+    margin: 0.2em;
+    color: gray;
+}
+
+/* Estilos para os detalhes expandidos */
+.detalhes {
+    margin: 0.8em 1em;
+}
+
+/* Estilos para os itens dos detalhes */
+.detalhes-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Estilos para cada detalhe dentro dos detalhes */
+.detalhes-item div {
+    flex: 1 1 30em; /* Define a largura máxima */
+    min-width: 33%;
+    overflow: hidden;
+    margin-bottom: 0.2em;
+}
+
+/* Estilos para o seletor de seção */
+.seletor-secao {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 1em;
+}
+
+/* Estilos para cada seção do seletor */
+.seletor-secao div {
+    cursor: pointer;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.seletor-secao div:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para o título da seção */
+h4 {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 1.5em;
+    color: #007bff;
+}
+
+/* Estilos para os rótulos dentro do formulário */
+.form-cliente label {
+    margin: 0.5em 0;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilos para os campos de entrada */
+.form-cliente input[type="text"],
+.form-cliente input[type="email"],
+.form-cliente textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Estilos para o botão de fechar */
+.modal-footer .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+/* Estilos para o botão de editar */
+.modal-footer .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.modal-footer .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.teste {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Estilos para o título do cadastro */
+.cadastro-title {
+    margin: 2em 0;
+    text-align: center;
+    font-size: 1.8em;
+    color: #333;
+}
+
+/* Estilos para o formulário de cadastro */
+.container-fluid {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos para os campos de entrada */
+.input-group input[type="text"],
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.input-group button:hover {
+    background-color: #0056b3;
+}
