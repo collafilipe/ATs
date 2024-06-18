@@ -1,0 +1,53 @@
+/* Estilos para o título do cadastro */
+.cadastro-title {
+    margin: 2em 0;
+    text-align: center;
+    font-size: 1.8em;
+    color: #333;
+}
+
+/* Estilos para as opções de cadastro */
+.opcoes-cadastro {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+/* Estilos para os botões de opções de cadastro */
+.opcoes-cadastro button {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 10px;
+    background-color: #151516;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.opcoes-cadastro button:hover {
+    background-color: #101111;
+}
+
+/* Estilos para dispositivos com largura menor que 600px (formato de celular) */
+@media (max-width: 600px) {
+    /* Estilos para o título do cadastro */
+    .cadastro-title {
+        font-size: 1.5em;
+        margin: 1em 0;
+    }
+
+    /* Estilos para as opções de cadastro */
+    .opcoes-cadastro {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    /* Estilos para os botões de opções de cadastro */
+    .opcoes-cadastro button {
+        padding: 0.8em 1.5em;
+        font-size: 1em;
+        border-radius: 5px;
+    }
+}
