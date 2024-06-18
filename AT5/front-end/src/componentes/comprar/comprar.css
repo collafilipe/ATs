@@ -1,0 +1,108 @@
+/* Styles for the edit icon in "edit client" */
+.editar-cliente .edit {
+    color: red; /* Change the color to red */
+}
+
+/* Styles for input fields in "edit client" */
+.editar-cliente input[type="text"],
+.editar-cliente input[type="email"],
+.editar-cliente textarea {
+    border-color: green; /* Change the border color to green */
+}
+
+/* Styles for the edit button in "edit client" */
+.editar-cliente .btn-primary {
+    background-color: yellow; /* Change the background color to yellow */
+    border-color: yellow; /* Change the border color to yellow */
+}
+
+.editar-cliente .btn-primary:hover {
+    background-color: orange; /* Change the hover background color to orange */
+    border-color: orange; /* Change the hover border color to orange */
+}
+
+/* Styles for the admin container */
+.adminContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Styles for the technician container */
+.containerTecnico {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Styles for the technician information */
+.informacaoTecnico {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styles for technician data */
+.tecnicoDados {
+    margin-bottom: 5px;
+}
+
+/* Add specific styles for each theme */
+.adminContainer.tema1 {
+    background-color: #fff;
+    border-color: #007bff;
+}
+
+.adminContainer.tema2 {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+}
+
+.adminContainer.tema3 {
+    background-color: #d4edda;
+    border-color: #28a745;
+}
+
+.adminContainer.tema4 {
+    background-color: #f8f9fa;
+    border-color: #ffc107;
+}
+
+/* Styles for the client details */
+.cliente-details {
+    text-align: center;
+}
+
+.detalhes {
+    align-items: center;
+}
+
+/* Styles for the modal */
+.modal {
+    overflow: auto !important;
+    overflow-x: auto !important;
+    overflow-y: auto !important;
+    display: none;
+    position: relative;
+    left: 0;
+    right: 0;
+    background-color: #fafafa;
+    padding: 0;
+    max-height: 70%;
+    width: 55%;
+    margin: auto;
+    border-radius: 2px;
+    will-change: top, opacity;
+    z-index: 1 !important;
+    margin-top: 10px !important;
+}
+
+body {
+    overflow: auto !important;
+    padding-bottom: 20px;
+}

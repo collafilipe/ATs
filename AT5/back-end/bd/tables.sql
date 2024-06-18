@@ -1,0 +1,43 @@
+DROP DATABASE IF EXISTS atv;
+
+CREATE DATABASE IF NOT EXISTS atv;
+USE atv;
+
+CREATE TABLE Produtos (
+    produtoID INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(255) NOT NULL,
+    valor VARCHAR(10) NOT NULL
+);
+
+CREATE TABLE Servicos (
+    servicoID INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(255) NOT NULL,
+    valor VARCHAR(10) NOT NULL
+);
+
+CREATE TABLE Clientes (
+    clienteID INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(255) NOT NULL,
+    cpf VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    rua VARCHAR(255) NOT NULL,
+    cidade VARCHAR(255) NOT NULL,
+    estado VARCHAR(255)NOT NULL,
+    informacoesAdicionais VARCHAR(255) DEFAULT NULL,
+    telefone VARCHAR(200) NOT NULL,
+    sexo VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Compra (
+compraID INT PRIMARY KEY AUTO_INCREMENT,
+clienteID INT DEFAULT NULL,
+produtoID INT DEFAULT NULL,
+servicoID INT DEFAULT NULL,
+quantidadeProduto INT DEFAULT NULL,
+quantidadeServico INT DEFAULT NULL,
+valorServico INT DEFAULT NULL,
+valorProduto INT DEFAULT NULL,
+FOREIGN KEY (clienteID) REFERENCES Clientes(clienteID),
+FOREIGN KEY (produtoID) REFERENCES Produtos(produtoID),
+FOREIGN KEY (servicoID) REFERENCES Servicos(servicoID) 
+);
