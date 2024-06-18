@@ -1,0 +1,36 @@
+1 - Instale o Node (Verifique se ja está instalado escrevendo no CMD "node --version")
+
+2 - instale as extenções no vscode (ESLint, JavaScript and TypeScript Microsoft, JavaScript (ES6), Code Runner)
+
+3 - instale o TypeScript (Entre no CMD e digite "npm install -g typescript")
+
+4 - entre no terminal do seu repositorio e digite "npm init" e depois "npx tsc --init" (Isso ira gerar o "tsconfig.json" nele vc ira colocar a seguinte configuração para compilar os arquivos de TypeScript, codigo q vc devera copiar e colar la dentro eu vou deixar por ultimo, basta vc apagar tudo do "tsconfig.json" e colar o meu script)
+
+5 -  dps crie uma pasta "src" e faça seus projetos em Type la dentro (com os arquivos "package.json", "package-lock.json" e "tsconfig.json" fora da pasta "src");
+
+6 - após isso para vc compilar os arquivos basta vc digitar no terminal "npx tsc"
+
+7 - agr para rodar basta entrar na pasta "out" criada com os arquivos compilados e entrar na minha pasta "app" e rodar o arquivo principal com "node ./index.js"
+
+EXTRA: 
+
+OBS: Para rodar bibliotecas dentro do node vc precisa ter uma pasta de node modules la dentro portante basta vc digitar "npm install @types/node" e para instalar a biblioteca q deseja é só digitar dps "npm install (nome da biblioteca)"
+
+Script do tsconfig.json: 
+
+{
+  "compilerOptions": {
+    "target": "ES5", /*'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', 'ES2021', or 'ESNEXT'. */
+    "module": "CommonJS", /*'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "out/",
+    "moduleResolution": "node",
+    "noImplicitAny": false
+  },
+  "include": [
+    "src/**/*"
+  ]
+}

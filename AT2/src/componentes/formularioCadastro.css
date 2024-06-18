@@ -1,0 +1,27 @@
+.container {
+    padding: 20px;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.input-field label {
+    margin-left: 10px;
+}
+
+.btn {
+    border-radius: 20px;
+}
+
+.btn.waves-effect.waves-light {
+    background-color: black;
+}
+
+.btn.waves-effect.waves-light:hover {
+    background-color: #333;
+}
+
+.btn.waves-effect.waves-light i {
+    vertical-align: middle;
+}
